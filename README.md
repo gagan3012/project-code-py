@@ -1,6 +1,15 @@
 # project-code-py
 GPT-2 Model for Python Questions 
 
+#### Model
+
+```
+from transformers import AutoTokenizer, AutoModelWithLMHead
+
+tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
+
+model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
+```
 
 #### Question:
 
