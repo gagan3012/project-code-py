@@ -1,6 +1,6 @@
 import torch
 import streamlit as st
-from transformers import GPT2TokenizerFast, GPT2LMHeadModel
+from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 st.set_page_config(
     page_title="GPT-2 Leetcode",
@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="expanded", )
 
 def modelgpt():
-    tokenizer = GPT2TokenizerFast.from_pretrained("gagan3012/project-code-py")
+    tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py")
     model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py")
     return model, tokenizer
 
