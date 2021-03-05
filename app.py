@@ -7,14 +7,17 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded", )
 
-def modelgpt():
+@st.cache(suppress_st_warning=True)
+def modelgpt(sequence, temp, top_p):
     tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py")
     model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py")
-    return model, tokenizer
+    inputs = tokenizer.encode(sequence, return_tensors='pt')
+    outputs = model.generate(inputs, max_length=1024, do_sample=True, temperature=temp, top_p=top_p)
+    text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return text
 
 
 def display():
-    model, tokenizer = modelgpt()
     st.sidebar.write('# Using GPT-2 to Generate Leetcode solutions')
     tokens = st.sidebar.slider(label='Number of Tokens', min_value=1, max_value=15, value=3, step=1)
     samples = st.sidebar.slider(label='Number of Samples', min_value=1, max_value=9, value=9, step=1)
@@ -30,22 +33,22 @@ def display():
 
     st.write('# Enter Leetcode Question:')
     sequence = st.text_area("", value='""" Write a function to delete a node in a singly-linked '
-                                                                'list. You will not be given access to the head of the '
-                                                                'list, instead you will be given access to the node to be '
-                                                                'deleted directly. It is guaranteed that the node to be '
-                                                                'deleted is not a tail node in the list.')
+                                      'list. You will not be given access to the head of the '
+                                      'list, instead you will be given access to the node to be '
+                                      'deleted directly. It is guaranteed that the node to be '
+                                      'deleted is not a tail node in the list.')
     if st.button("Get Answer"):
-        inputs = tokenizer.encode(sequence, return_tensors='pt')
-        outputs = model.generate(inputs, max_length=1024, do_sample=True, temperature=temp, top_p=top_p)
-        text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        text = modelgpt(sequence, temp, top_p)
         st.code(text.encode().decode('unicode_escape'), language='python')
 
     st.markdown(
         '''
         This is a demo of a text generation model trained with GPT-2 to generate LeetCode Answers in Python
 
-        *For additional questions and inquiries, please contact Gagan Bhatia via [LinkedIn](https://www.linkedin.com/in/gbhatia30/) or [Github](https://github.com/gagan3012).*
+        *For additional questions and inquiries, please contact Gagan Bhatia via [LinkedIn](
+        https://www.linkedin.com/in/gbhatia30/) or [Github](https://github.com/gagan3012).*
         ''')
+
 
 if __name__ == '__main__':
     display()
