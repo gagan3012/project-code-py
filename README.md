@@ -1,5 +1,8 @@
 # project-code-py
 GPT-2 Model for Python Questions 
+#### Demo
+
+https://share.streamlit.io/gagan3012/project-code-py/app.py
 
 #### Model
 
@@ -13,40 +16,62 @@ model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
 
 #### Question:
 
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+```
+Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
+```
 
 #### Answer:
 
 ```
-Example 1:
-Input: nums = [2,3,1,1,2,5]
-Output: 4
-Explanation: The two numbers add up to 4 because of the following rules:
+""" Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
 
-1. If the target is 1, then the two numbers are equal.
-2. If the target is 2, then the two numbers are equal.
-3. If the target is 5, then the two numbers are equal.
-4. If the target is 1, then the two numbers are equal.
+For example,
+a = 1->2->3
+b = 3->1->2
+t = ListNode(-1, 1)
+
+Note: The lexicographic ordering of the nodes in a tree matters. Do not assign values to nodes in a tree.
+Example 1:
+
+Input: [1,2,3]
+Output: 1->2->5
+Explanation: 1->2->3->3->4, then 1->2->5[2] and then 5->1->3->4.
+
 
 Note:
 
-1 <= nums.length <= 50000
--10000 <= nums[i] <= 10000
--10000 <= nums[i] <= 10000
+The length of a linked list will be in the range [1, 1000].
+Node.val must be a valid LinkedListNode type.
+Both the length and the value of the nodes in a linked list will be in the range [-1000, 1000].
+All nodes are distinct.
 """
-from typing import List
-from collections import defaultdict
-
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 class Solution:
-    def twoSum(self, nums: List[int]) -> int:
+    def deleteNode(self, head: ListNode, val: int) -> None:
         """
-        Let F[i] be the sum of the two sums
-        F[i-1] = F[i-2] + F[i-3]
+        BFS
+        Linked List
+        :param head: ListNode
+        :param val: int
+        :return: ListNode
         """
-        F = defaultdict(lambda: defaultdict(int))
-        for i in range(len(nums)):
-            F[i] = F[i-1] + F[i-2]
-        return F[-1]
-        
+        if head is not None:
+            return head
+        dummy = ListNode(-1, 1)
+        dummy.next = head
+        dummy.next.val = val
+        dummy.next.next = head
+        dummy.val = ""
+
+
+s1 = Solution()
+print(s1.deleteNode(head))
+print(s1.deleteNode(-1))
+print(s1.deleteNode(-1))
+
    ```
