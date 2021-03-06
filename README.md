@@ -1,5 +1,7 @@
-# project-code-py
-GPT-2 Model for Python Questions 
+# Leetcode Solutions using AI
+GPT-2 Model for Leetcode Questions in python 
+
+Note: the Answers might not make sense in some cases 
 #### Demo
 
 https://share.streamlit.io/gagan3012/project-code-py/app.py
