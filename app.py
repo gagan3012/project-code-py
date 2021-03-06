@@ -3,7 +3,7 @@ import streamlit as st
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 st.set_page_config(
-    page_title="GPT-2 Leetcode",
+    page_title="AI Leetcode",
     layout="wide",
     initial_sidebar_state="expanded", )
 
