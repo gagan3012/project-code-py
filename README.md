@@ -1,7 +1,7 @@
 # Leetcode Solutions using AI
 GPT-2 Model for Leetcode Questions in python 
 
-Note: the Answers might not make sense in some cases 
+Note: the Answers might not make sense in some cases because of the bias in GPT-2
 #### Demo
 
 https://share.streamlit.io/gagan3012/project-code-py/app.py
