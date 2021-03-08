@@ -9,8 +9,8 @@ st.set_page_config(
 
 @st.cache(suppress_st_warning=True)
 def modelgpt(sequence, temp, top_p):
-    tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py")
-    model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py")
+    tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py-small")
+    model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py-small")
     inputs = tokenizer.encode(sequence, return_tensors='pt')
     outputs = model.generate(inputs, max_length=1024, do_sample=True, temperature=temp, top_p=top_p)
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
