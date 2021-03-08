@@ -32,7 +32,7 @@ def display():
         `Top k:` Integer value controlling diversity. 1 means only 1 word is considered for each step (token), resulting in deterministic completions, while 40 means 40 words are considered at each step. 0 (default) is a special setting meaning no restrictions. 40 generally is a good value.
         ''')
 
-    st.write('## Enter Leetcode Question:')
+    st.write('## Enter a Leetcode Question or Starting code:')
     sequence = st.text_area("", value='""" Write a function to delete a node in a singly-linked '
                                       'list. You will not be given access to the head of the '
                                       'list, instead you will be given access to the node to be '
