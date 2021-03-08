@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="expanded", )
 
 
-@st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True,ttl=100)
 def modelgpt(sequence, temp, top_p):
     tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py-small")
     model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py-small")
