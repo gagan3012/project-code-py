@@ -29,7 +29,7 @@ A streamlit webapp has been setup to use the model: https://share.streamlit.io/g
 ![image](https://user-images.githubusercontent.com/49101362/110356042-e69e4780-804a-11eb-94c6-a47fa3cd66b3.png)
 
 
-## Demo results:
+## Example results:
 
 ### Question:
 
@@ -39,7 +39,7 @@ Write a function to delete a node in a singly-linked list. You will not be given
 
 ### Answer:
 
-```
+```python
 """ Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
 
 For example,
