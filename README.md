@@ -2,6 +2,8 @@
 GPT-2 Model for Leetcode Questions in python 
 
 Note: the Answers might not make sense in some cases because of the bias in GPT-2
+
+If you would like to make the model better contributions are welcome Check out CONTRIBUTIONS.md
 ## Demo
 
 A streamlit webapp has been setup to use the model:
