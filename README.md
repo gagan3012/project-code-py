@@ -3,12 +3,10 @@ GPT-2 Model for Leetcode Questions in python
 
 Note: the Answers might not make sense in some cases because of the bias in GPT-2
 
-If you would like to make the model better contributions are welcome Check out CONTRIBUTIONS.md
+If you would like to make the model better contributions are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md)
 ## Demo
 
-A streamlit webapp has been setup to use the model:
-
-https://share.streamlit.io/gagan3012/project-code-py/app.py
+A streamlit webapp has been setup to use the model: https://share.streamlit.io/gagan3012/project-code-py/app.py
 
 ![image](https://user-images.githubusercontent.com/49101362/110356042-e69e4780-804a-11eb-94c6-a47fa3cd66b3.png)
 
