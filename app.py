@@ -18,7 +18,7 @@ def modelgpt(sequence, temp, top_p):
 
 
 def display():
-    st.sidebar.write('# Using GPT-2 to Generate Leetcode solutions')
+    st.sidebar.write('# Using AI to Generate Leetcode solutions')
     tokens = st.sidebar.slider(label='Number of Tokens', min_value=1, max_value=15, value=3, step=1)
     samples = st.sidebar.slider(label='Number of Samples', min_value=1, max_value=9, value=9, step=1)
     top_p = st.sidebar.slider(label='Top k', min_value=0.0, max_value=40.0, value=1.0, step=1.0)
