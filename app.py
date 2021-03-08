@@ -20,6 +20,13 @@ def modelgpt(sequence, temp, top_p):
 def display():
     st.write('# Using AI to Generate Leetcode solutions')
     st.sidebar.write('## Options:')
+    st.slider.markdown(
+        '''
+        This is a demo of a text generation model trained with GPT-2 to generate LeetCode Answers in Python
+
+        *For additional questions and inquiries, please contact Gagan Bhatia via [LinkedIn](
+        https://www.linkedin.com/in/gbhatia30/) or [Github](https://github.com/gagan3012).*
+        ''')
     tokens = st.sidebar.slider(label='Number of Tokens', min_value=1, max_value=15, value=3, step=1)
     samples = st.sidebar.slider(label='Number of Samples', min_value=1, max_value=9, value=9, step=1)
     top_p = st.sidebar.slider(label='Top k', min_value=0.0, max_value=40.0, value=1.0, step=1.0)
@@ -37,15 +44,6 @@ def display():
     if st.button("Get Answer"):
         text = modelgpt(sequence, temp, top_p)
         st.code(text.encode().decode('unicode_escape'), language='python')
-
-    st.markdown(
-        '''
-        This is a demo of a text generation model trained with GPT-2 to generate LeetCode Answers in Python
-
-        *For additional questions and inquiries, please contact Gagan Bhatia via [LinkedIn](
-        https://www.linkedin.com/in/gbhatia30/) or [Github](https://github.com/gagan3012).*
-        ''')
-
 
 if __name__ == '__main__':
     display()
