@@ -8,6 +8,10 @@ https://share.streamlit.io/gagan3012/project-code-py/app.py
 
 #### Model
 
+Two models have been developed for different use cases and they can be found at https://huggingface.co/gagan3012
+
+The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
+
 ```
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
