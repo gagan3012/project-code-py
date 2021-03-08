@@ -2,11 +2,11 @@
 GPT-2 Model for Leetcode Questions in python 
 
 Note: the Answers might not make sense in some cases because of the bias in GPT-2
-#### Demo
+### Demo
 
 https://share.streamlit.io/gagan3012/project-code-py/app.py
 
-#### Model
+### Model
 
 Two models have been developed for different use cases and they can be found at https://huggingface.co/gagan3012
 
@@ -20,13 +20,13 @@ tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
 model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
 ```
 
-#### Question:
+### Question:
 
 ```
 Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
 ```
 
-#### Answer:
+### Answer:
 
 ```
 """ Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
