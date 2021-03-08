@@ -7,6 +7,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded", )
 
+
 @st.cache(suppress_st_warning=True)
 def modelgpt(sequence, temp, top_p):
     tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py-small")
@@ -16,9 +17,9 @@ def modelgpt(sequence, temp, top_p):
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return text
 
-
 def display():
-    st.sidebar.write('# Using AI to Generate Leetcode solutions')
+    st.write('# Using AI to Generate Leetcode solutions')
+    st.sidebar.write('## Options:')
     tokens = st.sidebar.slider(label='Number of Tokens', min_value=1, max_value=15, value=3, step=1)
     samples = st.sidebar.slider(label='Number of Samples', min_value=1, max_value=9, value=9, step=1)
     top_p = st.sidebar.slider(label='Top k', min_value=0.0, max_value=40.0, value=1.0, step=1.0)
@@ -31,7 +32,7 @@ def display():
         `Top k:` Integer value controlling diversity. 1 means only 1 word is considered for each step (token), resulting in deterministic completions, while 40 means 40 words are considered at each step. 0 (default) is a special setting meaning no restrictions. 40 generally is a good value.
         ''')
 
-    st.write('# Enter Leetcode Question:')
+    st.write('## Enter Leetcode Question:')
     sequence = st.text_area("", value='""" Write a function to delete a node in a singly-linked '
                                       'list. You will not be given access to the head of the '
                                       'list, instead you will be given access to the node to be '
