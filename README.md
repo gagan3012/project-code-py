@@ -2,16 +2,17 @@
 GPT-2 Model for Leetcode Questions in python 
 
 Note: the Answers might not make sense in some cases because of the bias in GPT-2
-### Demo
+## Demo
 
 https://share.streamlit.io/gagan3012/project-code-py/app.py
 
-### Model
+## Model
 
 Two models have been developed for different use cases and they can be found at https://huggingface.co/gagan3012
 
 The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
 
+### Example usage:
 ```
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
@@ -19,6 +20,8 @@ tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
 
 model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
 ```
+
+## Demo results:
 
 ### Question:
 
