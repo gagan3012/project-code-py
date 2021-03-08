@@ -21,6 +21,8 @@ model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
 ```
 
 ## Demo
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/project-code-py/app.py)
+
 
 A streamlit webapp has been setup to use the model: https://share.streamlit.io/gagan3012/project-code-py/app.py
 
