@@ -1,13 +1,17 @@
-# Leetcode Solutions using AI
+# Leetcode using AI :robot:
 GPT-2 Model for Leetcode Questions in python 
 
-Note: the Answers might not make sense in some cases because of the bias in GPT-2
-#### Demo
+**Note**: the Answers might not make sense in some cases because of the bias in GPT-2
 
-https://share.streamlit.io/gagan3012/project-code-py/app.py
+**Contribtuions:** If you would like to make the model better contributions are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md)
 
-#### Model
+## Model
 
+Two models have been developed for different use cases and they can be found at https://huggingface.co/gagan3012
+
+The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
+
+### Example usage:
 ```
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
@@ -16,15 +20,24 @@ tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
 model = AutoModelWithLMHead.from_pretrained("gagan3012/project-code-py")
 ```
 
-#### Question:
+## Demo
+
+A streamlit webapp has been setup to use the model: https://share.streamlit.io/gagan3012/project-code-py/app.py
+
+![image](https://user-images.githubusercontent.com/49101362/110356042-e69e4780-804a-11eb-94c6-a47fa3cd66b3.png)
+
+
+## Example results:
+
+### Question:
 
 ```
 Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
 ```
 
-#### Answer:
+### Answer:
 
-```
+```python
 """ Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly. It is guaranteed that the node to be deleted is not a tail node in the list.
 
 For example,
