@@ -1,8 +1,6 @@
 # Leetcode using AI
 GPT-2 Model for Leetcode Questions in python 
 
-[![HitCount](http://hits.dwyl.com/gagan3012/project-code-py.svg)](http://hits.dwyl.com/gagan3012/project-code-py)
-
 **Note**: the Answers might not make sense in some cases because of the bias in GPT-2
 
 **Contribtuions:** If you would like to make the model better contributions are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md)
