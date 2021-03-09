@@ -7,8 +7,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded", )
 
-st.sidebar.image("images/animoji.jpeg", width=300, height=500)
-
 
 @st.cache(suppress_st_warning=True,ttl=1000)
 def modelgpt(sequence, temp, top_p):
