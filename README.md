@@ -12,7 +12,7 @@ Two models have been developed for different use cases and they can be found at 
 The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
 
 ### Example usage:
-```
+```python
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
 tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
