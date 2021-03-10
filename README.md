@@ -5,6 +5,10 @@ GPT-2 Model for Leetcode Questions in python
 
 **Contribtuions:** If you would like to make the model better contributions are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md)
 
+### 📢 Favour:
+
+It would be highly motivating, if you can STAR⭐ this repo if you find it helpful.
+
 ## Model
 
 Two models have been developed for different use cases and they can be found at https://huggingface.co/gagan3012
