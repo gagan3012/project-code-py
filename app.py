@@ -22,6 +22,8 @@ def display():
     st.write('# Using AI to Generate LeetCode solutions')
     st.sidebar.markdown(
         '''
+        # Project-code-py
+        
         ## This is a demo of a text generation model trained with GPT-2 to generate LeetCode Answers in Python
 
         *For additional questions and inquiries, please contact **Gagan Bhatia** via [LinkedIn](
