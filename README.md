@@ -3,7 +3,11 @@ GPT-2 Model for Leetcode Questions in python
 
 **Note**: the Answers might not make sense in some cases because of the bias in GPT-2
 
-**Contribtuions:** If you would like to make the model better contributions are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md)
+**Contribtuions:** If you would like to make the model better contributions (Issues/PRs) are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/CONTRIBUTIONS.md) 
+
+### 📢 Favour:
+
+It would be highly motivating, if you can STAR⭐ this repo if you find it helpful.
 
 ## Model
 
@@ -12,7 +16,7 @@ Two models have been developed for different use cases and they can be found at 
 The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
 
 ### Example usage:
-```
+```python
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
 tokenizer = AutoTokenizer.from_pretrained("gagan3012/project-code-py")
