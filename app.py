@@ -42,7 +42,7 @@ def display():
         ''')
 
     st.write('## Enter a Leetcode Question or Starting code:')
-    sequence = st.text_area("", value="Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.")
+    sequence = st.text_area("", value="Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.",height=150)
     if st.button("Get Answer"):
         text = modelgpt(sequence, temp, top_p)
         st.code(text.encode().decode('unicode_escape'), language='python')
