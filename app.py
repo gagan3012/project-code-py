@@ -19,7 +19,7 @@ def modelgpt(sequence, temp, top_p):
     return text
 
 def display():
-    st.write('# Using AI to Generate Leetcode solutions')
+    st.write('# Using AI to Generate LeetCode solutions')
     st.sidebar.markdown(
         '''
         ## This is a demo of a text generation model trained with GPT-2 to generate LeetCode Answers in Python
