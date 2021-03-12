@@ -1,7 +1,7 @@
 # Leetcode using AI :robot:
 GPT-2 Model for Leetcode Questions in python 
 
-**Note**: the Answers might not make sense in some cases because of the bias in GPT-2
+**Note**: the Answers might not make sense in some cases because of the bias in GPT-2 Current accuracy is capped at 90%.
 
 **Contribtuions:** If you would like to make the model better contributions (Issues/PRs) are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/.github/CONTRIBUTIONS.md) 
 
