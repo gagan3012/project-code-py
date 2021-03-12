@@ -15,6 +15,8 @@ Two models have been developed for different use cases and they can be found at 
 
 The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/project-code-py) and [DistilGPT-2](https://huggingface.co/gagan3012/project-code-py-small)
 
+The model has been trained using **Weights and Biases (Wandb)** and **PyTorch**
+
 ### Example usage:
 ```python
 from transformers import AutoTokenizer, AutoModelWithLMHead
