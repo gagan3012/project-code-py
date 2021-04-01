@@ -19,6 +19,8 @@ The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/pr
 
 The model has been trained using **Weights and Biases (Wandb)** and **PyTorch**
 
+Update using GPT Neo is coming up
+
 ### Example usage:
 ```python
 from transformers import AutoTokenizer, AutoModelWithLMHead
