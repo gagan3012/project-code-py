@@ -10,10 +10,13 @@ st.set_page_config(
 
 
 @st.cache(suppress_st_warning=True,ttl=1000)
-def modelgpt():
+def modelgpt(sequence, temp, top_p):
     tokenizer = GPT2Tokenizer.from_pretrained("gagan3012/project-code-py-small")
     model = GPT2LMHeadModel.from_pretrained("gagan3012/project-code-py-small")
-    return tokenizer,model
+    inputs = tokenizer.encode(sequence, return_tensors='pt')
+    outputs = model.generate(inputs, max_length=1024, do_sample=True, temperature=temp, top_p=top_p)
+    text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return text
 
 def display():
     st.write('# Using AI to Generate LeetCode solutions')
@@ -43,10 +46,7 @@ def display():
     st.write('## Enter a Leetcode Question or Starting code:')
     sequence = st.text_area("", value="Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.",height=150)
     if st.button("Get Answer"):
-        text = modelgpt()
-        inputs = tokenizer.encode(sequence, return_tensors='pt')
-        outputs = model.generate(inputs, max_length=1024, do_sample=True, temperature=temp, top_p=top_p)
-        text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        text = modelgpt(sequence, temp, top_p)
         st.code(text.encode().decode('unicode_escape'), language='python')
 
 if __name__ == '__main__':
