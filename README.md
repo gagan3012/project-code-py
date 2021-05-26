@@ -19,7 +19,7 @@ The model weights can be found here: [GPT-2](https://huggingface.co/gagan3012/pr
 
 The model has been trained using **Weights and Biases (Wandb)** and **PyTorch**
 
-Update using GPT Neo is coming up
+GPT Neo model: https://huggingface.co/gagan3012/project-code-py-neo
 
 ### Example usage:
 ```python
