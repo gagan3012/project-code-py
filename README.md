@@ -38,6 +38,7 @@ A streamlit webapp has been setup to use the model: https://share.streamlit.io/g
 
 ![image](https://user-images.githubusercontent.com/49101362/110356042-e69e4780-804a-11eb-94c6-a47fa3cd66b3.png)
 
+Please create an issue in this repo if the demo is not working
 
 ## Example results:
 
