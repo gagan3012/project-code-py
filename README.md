@@ -5,7 +5,7 @@ GPT-2 Model for Leetcode Questions in python
 
 **Contribtuions:** If you would like to make the model/UI better contributions (Issues/PRs) are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/.github/CONTRIBUTIONS.md) 
 
-**How I built this** : [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:6775934721827459072/) and Blog (coming soon)
+**How I built this** : [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:6775934721827459072/) 
 
 ### 📢 Favour:
 
