@@ -9,7 +9,7 @@ GPT-2 Model for Leetcode Questions in python
 
 ### 📢 Favour:
 
-It would be highly motivating, if you can STAR⭐ this repo if you find it helpful.
+It would be highly motivating, if you can STAR⭐ this repo if you find it helpful. New improvements incoming!
 
 ## Model
 
