@@ -3,7 +3,7 @@ GPT-2 Model for Leetcode Questions in python  New demo here: https://huggingface
 
 **Note**: the Answers might not make sense in some cases because of the bias in GPT-2 Current accuracy is capped at 90%. 
 
-**Contribtuions:** If you would like to make the model/UI better contributions (Issues/PRs) are welcome Check out [CONTRIBUTIONS.md](https://github.com/gagan3012/project-code-py/blob/master/.github/CONTRIBUTIONS.md) 
+**Contribtuions:** If you would like to make the model/UI better contributions (Issues/PRs) are welcome Check out [CONTRIBUTIONS](https://github.com/gagan3012/project-code-py/blob/master/.github/CONTRIBUTIONS.md) 
 
 **How I built this** : [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:6775934721827459072/) 
 
